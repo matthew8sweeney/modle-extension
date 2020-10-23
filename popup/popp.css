@@ -1,0 +1,12 @@
+body {
+    overflow: visible;
+    height: 500px;
+}
+
+div {
+    background-color: brown;
+}
+
+button#btnAction {
+    background-color: blueviolet;
+}
