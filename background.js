@@ -1,3 +1,8 @@
+// background.js
+// by Matthew Sweeney
+// 10/23/2020
+// For extension to keep Moodle from kicking you out for inactivity
+
 // Send a HEAD request to Moodle
 function sendReq() {
     req = new XMLHttpRequest();
@@ -8,8 +13,8 @@ function sendReq() {
 // Preserve the current cookie session by sending HEAD requests every so often
 function preserve() {
     sendReq();
-
-    setTimeout(preserve, 300000);  // wait 5 mins worth of millisecs, then repeat
+    // wait 5 mins worth of millisecs, then repeat
+    setTimeout(preserve, 300000);
 }
 
 preserve();

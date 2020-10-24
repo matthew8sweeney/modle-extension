@@ -2,22 +2,18 @@
     "manifest_version": 2,
 
     "name": "Modle",
-    "version": "0.0",
+    "version": "0.1",
     "description": "Prevent Moodle from logging you out after 10-20 mins",
-    // "default_locale": "en",
 
     "icons": {
-        "16": "icons/modle16x16.png"
-    },
-
-    "browser_action": {
-        "default_popup": "popup/popup.html"
+        "16": "icons/modle16.png",
+        "32": "icons/modle32.png",
+        "64": "icons/modle64.png",
+        "128": "icons/modle128.png"
     },
 
     "background": {
         "persistent": true,
         "scripts": ["background.js"]
-    },
-    
-    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    }
 }
