@@ -3,7 +3,7 @@
 
     "name": "Modle",
     "version": "0.1",
-    "description": "Prevent Moodle from logging you out after 10-20 mins",
+    "description": "Prevent IWU Moodle from logging you out after 10-20 mins",
 
     "icons": {
         "16": "icons/modle16.png",
@@ -12,8 +12,17 @@
         "128": "icons/modle128.png"
     },
 
+    "browser_action": {
+        "default_icon": "icons/modle16.png"
+    },
+
     "background": {
         "persistent": true,
         "scripts": ["background.js"]
-    }
+    },
+
+    "permissions": [
+        "cookies",
+        "*//courses.iwu.edu"
+    ]
 }
